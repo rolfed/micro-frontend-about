@@ -2,6 +2,16 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "@umpua-bank/about/*": [ // used for development
+        "projects/about/*",
+        "projects/about"
+      ],
+      "@umpqua-bank/about": [ // builds product artifacts
+        "dist/about/about/*",
+        "dist/about"
+      ]
+    },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
